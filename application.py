@@ -22,7 +22,7 @@ APPLICATION_NAME = "Restaurant Menu Application"
 
 
 # Connect to Database and create database session
-engine = create_engine('sqlite:///restaurantmenuwithusers.db',
+engine = create_engine('postgres:///restaurantmenuwithusers.db',
                        connect_args={'check_same_thread': False})
 Base.metadata.bind = engine
 
